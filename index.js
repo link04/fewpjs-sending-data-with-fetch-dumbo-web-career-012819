@@ -31,6 +31,7 @@ const errorSelf = () => {
   .then(json => {
      return json.message;
   }).catch(error => {
+    console.log(error);
     return ":(";
   })
 }
